@@ -1,0 +1,14 @@
+package com.dsa.questions;
+/*
+ * Given an array of integers 'nums' and an integer 'target', return indices of the two 
+ * numbers such that they added up to 'target'
+ * 
+ * 
+ * */
+public class TwoSum {
+
+	public static void main(String[] args) {
+		
+		int[] nums = new int[] {5,6,7,1,2};
+	}
+}

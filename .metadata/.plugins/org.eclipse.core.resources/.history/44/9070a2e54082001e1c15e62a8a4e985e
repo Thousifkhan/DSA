@@ -1,0 +1,11 @@
+package StudentProduct;
+
+public class Helper {
+	
+	int age;
+	String name;
+	String place;
+	String mobileno;
+	String country;
+
+}

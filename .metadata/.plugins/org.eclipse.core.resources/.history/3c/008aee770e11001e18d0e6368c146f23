@@ -1,0 +1,14 @@
+package com.java.patterns;
+
+public class Star_Rectangle {
+
+	public static void main(String[] args) {
+		
+		int row = 5;
+		int colum = 5;
+		for(int i = 0; i < row;i++) {
+			
+			System.out.print('*');
+		}
+	}
+}

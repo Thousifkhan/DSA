@@ -1,0 +1,37 @@
+package search.util;
+
+public class BinarySearchUtil {
+
+	void binarySearch(int[] a, int numberToFind) {
+		
+		search(a,numberToFind);
+	}
+
+	private int search(int[] a, int numberToFind) {
+		
+		int mid = a.length / 2;
+		int low = 0;
+		int high = a.length;
+		
+		while( low <= high) {
+			
+			if(a[mid]==numberToFind) {
+				
+				return mid;
+			}
+			
+			if(a[mid] > numberToFind) {
+				
+				high = mid;
+				mid = mid/2;
+			}else {
+				
+				low = mid;
+				mid/=2;
+			}
+		}
+		return -1;
+		
+		
+	}
+}

@@ -1,0 +1,14 @@
+package search.util;
+
+public class BinarySearch {
+
+	void binarySearch(int[] a, int numberToFind) {
+		
+		search(a,numberToFind);
+	}
+
+	private void search(int[] a) {
+		
+		
+	}
+}

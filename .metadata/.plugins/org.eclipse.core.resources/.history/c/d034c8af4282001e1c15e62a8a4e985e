@@ -1,0 +1,26 @@
+package StudentProduct;
+
+public class Student {
+	
+	int age;
+	String name;
+	String place;
+	String mobileno;
+	String country;
+	
+		Student(Helper helper) throws Exception {
+			
+			if(helper.age < 15 || helper.age > 80) {
+				
+				throw new IllegalAccessException("AGE IS NOT CORRECT");
+			}
+			this.name = helper.name;
+			this.age = helper.age;
+		}
+
+	
+	
+	
+	
+
+}

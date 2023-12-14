@@ -1,0 +1,25 @@
+package binarySearch;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import sort.util.MergerSort;
+
+public class BinarySearch {
+
+	public static void main(String[] args) {
+		
+		int[] a = {18,9,34,10,22,50,10};
+		
+		
+		MergerSort sort = new MergerSort();
+		
+		sort.sort(a);
+		
+		
+		
+		
+		
+		
+	}
+}

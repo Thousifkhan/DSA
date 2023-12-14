@@ -1,0 +1,12 @@
+package com.java.Threads;
+
+public class Client {
+
+	public static void main(String[] args) {
+		
+		Printer p = new Printer();
+		Thread t = new Thread(p);
+		t.start();
+		
+	}
+}

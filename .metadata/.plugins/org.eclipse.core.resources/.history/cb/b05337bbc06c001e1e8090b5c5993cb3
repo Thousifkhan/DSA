@@ -1,0 +1,23 @@
+package sort.util;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class MergerSort {
+
+
+	void mergeSort(List arr) {
+		
+		sort(arr);
+	}
+
+	private void sort(List arr) {
+		
+		int size = arr.size();
+		List lsh = new ArrayList<>();
+		List rsh = new ArrayList<>();
+		
+		
+	}
+	
+}

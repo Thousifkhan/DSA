@@ -1,0 +1,13 @@
+package DSA_Arrays;
+/*
+ * Given a ar[N], initially ar[]=0, return the final array after performing all the queries.
+ * 
+ * Queries(i,x) --> Add x to all the numbers from A[i] to A[N-1]
+ * 
+ * */
+public class AddX {
+
+	public static void main(String[] args) {
+		
+	}
+}

@@ -1,0 +1,19 @@
+package StudentProduct;
+
+public class Client {
+
+	public static void main(String[] args) {
+		
+		Helper st = new Helper();
+		
+		st.name="Thousif";
+		st.age = 10;
+		st.country = "India";
+		st.mobileno = "+919629942039";
+		st.place = "Hosur";
+		
+		
+		
+		
+	}
+}

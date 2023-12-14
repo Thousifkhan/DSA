@@ -1,0 +1,72 @@
+package sort.util;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class MergerSort {
+
+	void mergeSort(int[] arr) {
+
+		sort(arr);
+	}
+
+	public void sort(int[] arr) {
+
+		
+		int size = arr.length;
+		int mid = size / 2;
+		int[] lsh = new int[mid];
+		int[] rsh = new int[size-mid];
+
+		if (size < 2) {
+			return;
+		}
+		for (int i = 0; i < mid; i++) {
+			lsh[i]= arr[i];
+		}
+		for (int i = mid; i < size; i++) {
+
+			rsh.add(i - mid, arr.get(i));
+		}
+
+		sort(lsh);
+		sort(rsh);
+
+		merge(sortedList, lsh, rsh);
+		return sortedList;
+
+	}
+
+	private void merge(List<Integer> arr, List<Integer> lsh, List<Integer> rsh) {
+
+		int i = 0;
+		int j = 0;
+		int k = 0;
+
+		while (i < lsh.size() && j < rsh.size()) {
+			
+			
+			if (lsh.get(i) <= rsh.get(j)) {
+				arr.add(k, lsh.get(i));
+				i++;
+			} else {
+				arr.add(k, rsh.get(j));
+				j++;
+			}
+			k++;
+		}
+
+		while (i < lsh.size()) {
+			arr.add(k, lsh.get(i));
+			i++;
+			k++;
+		}
+		while (j < rsh.size()) {
+			arr.add(k, rsh.get(j));
+			j++;
+			k++;
+		}
+
+	}
+
+}
